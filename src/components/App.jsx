@@ -1,4 +1,6 @@
+import css from './App.module.css';
 import ContactForm from './ContactForm/ContactForm';
+import Filter from './Filter/Filter';
 
 const App = () => {
   return (
