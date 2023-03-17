@@ -1,5 +1,4 @@
 import css from './ContactList.module.css';
-import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteContact, fetchContacts } from 'redux/operations';
@@ -50,16 +49,6 @@ const ContactList = () => {
       </tbody>
     </table>
   );
-};
-
-ContactList.propTypes = {
-  contacts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      name: PropTypes.string,
-      number: PropTypes.string,
-    }).isRequired
-  ),
 };
 
 export default ContactList;
